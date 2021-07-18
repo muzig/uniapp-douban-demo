@@ -1,17 +1,25 @@
 <template>
   <view class="container">
     <button @click="handleNavToIndex">主页</button>
+    <span>数字: {{ count }}</span>
+    <button @click="handleIncrement">加</button>
   </view>
 </template>
 
 <script>
 export default {
   data() {
-    return {
-      href: "https://uniapp.dcloud.io/component/README?id=uniui",
-    };
+    return {};
+  },
+  computed: {
+    count() {
+      return this.$store.state.count;
+    },
   },
   methods: {
+    handleIncrement() {
+      this.$store.commit("increment");
+    },
     handleNavToIndex() {
       uni.navigateTo({
         url: "detail",

@@ -1,13 +1,6 @@
 <script>
 export default {
-  onLaunch: function () {
-    uni.request({
-      url: "https://www.baidu.com",
-      success: (res) => {
-        console.log(res);
-      },
-    });
-  },
+  onLaunch: function () {},
   onShow: function () {
     console.log("App Show");
   },

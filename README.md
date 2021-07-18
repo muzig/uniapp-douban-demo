@@ -64,6 +64,7 @@ npm i @dcloudio/types --save-dev
 
 - [数据缓存](https://uniapp.dcloud.io/api/storage/storage?id=setstorage)
 - [文件](https://uniapp.dcloud.io/api/file/file?id=savefile)
+- [Vuex 全局数据管理](https://uniapp.dcloud.io/vue-vuex)
 
 #### 框架
 
