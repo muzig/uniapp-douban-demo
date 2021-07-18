@@ -38,6 +38,37 @@ npm install vue
 npm install @dcloudio/uni-ui
 ```
 
+## 知识点参考
+
+### 基础
+
+- [基础](https://uniapp.dcloud.io/api/log)
+- [组件](https://uniapp.dcloud.io/component/README)
+- [界面交互](https://uniapp.dcloud.io/api/ui/prompt)
+- [路由与页面跳转](https://uniapp.dcloud.io/api/router?id=navigateto)
+
+### 网络
+
+- [网络API](https://uniapp.dcloud.io/api/request/request)
+
+### 数据
+
+- [数据缓存](https://uniapp.dcloud.io/api/storage/storage?id=setstorage)
+- [文件](https://uniapp.dcloud.io/api/file/file?id=savefile)
+
+### 框架
+
+- [指导文档](https://uniapp.dcloud.io/collocation/pages)
+
+### 其他
+
+- [地理](https://uniapp.dcloud.io/api/location/location)
+- [媒体](https://uniapp.dcloud.io/api/media/image)
+- [设备](https://uniapp.dcloud.io/api/system/info)
+- [广告](https://uniapp.dcloud.io/api/a-d/rewarded-video)
+- [第三方服务](https://uniapp.dcloud.io/api/plugins/provider)
+- [其他](https://uniapp.dcloud.io/api/other/authorize)
+
 
 ## Q & A
 
