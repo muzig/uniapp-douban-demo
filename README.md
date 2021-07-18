@@ -20,8 +20,11 @@
   - [ ] 主页
   - [ ] 用户观影界面
   - [ ] 用户详情界面
+  
 
-## 环境准备
+## 前端界面
+
+### 环境准备
 
 - XBuild
 - WebStorm
@@ -33,34 +36,40 @@
 git clone https://github.com/muzig/uniapp-douban-demo
 
 # 准备环境
-npm install prettier --save-dev
-npm install vue
-npm install @dcloudio/uni-ui
+npm i prettier --save-dev
+npm i vue
+npm i @dcloudio/uni-ui
+npm i @dcloudio/types --save-dev
 ```
 
-## 知识点参考
+### 知识点参考
 
-### 基础
+#### HTML/CSS/JS
+
+- [SCSS](https://www.sass.hk/guide/)
+
+#### 基础
 
 - [基础](https://uniapp.dcloud.io/api/log)
 - [组件](https://uniapp.dcloud.io/component/README)
 - [界面交互](https://uniapp.dcloud.io/api/ui/prompt)
 - [路由与页面跳转](https://uniapp.dcloud.io/api/router?id=navigateto)
 
-### 网络
+#### 网络
 
 - [网络API](https://uniapp.dcloud.io/api/request/request)
+- [微信小程序网络限制说明](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/network.html)
 
-### 数据
+#### 数据
 
 - [数据缓存](https://uniapp.dcloud.io/api/storage/storage?id=setstorage)
 - [文件](https://uniapp.dcloud.io/api/file/file?id=savefile)
 
-### 框架
+#### 框架
 
 - [指导文档](https://uniapp.dcloud.io/collocation/pages)
 
-### 其他
+#### 其他
 
 - [地理](https://uniapp.dcloud.io/api/location/location)
 - [媒体](https://uniapp.dcloud.io/api/media/image)
@@ -68,6 +77,21 @@ npm install @dcloudio/uni-ui
 - [广告](https://uniapp.dcloud.io/api/a-d/rewarded-video)
 - [第三方服务](https://uniapp.dcloud.io/api/plugins/provider)
 - [其他](https://uniapp.dcloud.io/api/other/authorize)
+
+## 后端界面
+
+### 环境准备
+
+- Flask: 基于python的用于快速开发的web框架
+
+```bash
+# 安装python web框架
+pip3 install flask
+```
+
+### 知识点参考
+
+- [Flask使用说明](https://flask.palletsprojects.com/en/1.0.x/quickstart/#a-minimal-application)
 
 
 ## Q & A

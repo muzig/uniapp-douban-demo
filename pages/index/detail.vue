@@ -1,20 +1,16 @@
 <template>
-  <view class="container">
-    <button @click="handleNavToIndex">主页</button>
+  <view>
+    <button @click="handleNavToIndex">细节</button>
   </view>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      href: "https://uniapp.dcloud.io/component/README?id=uniui",
-    };
-  },
+  name: "detail",
   methods: {
     handleNavToIndex() {
       uni.navigateTo({
-        url: "detail",
+        url: "index",
         success: () => {
           console.log("navigate to index success");
         },
@@ -27,10 +23,4 @@ export default {
 };
 </script>
 
-<style>
-.container {
-  padding: 20px;
-  font-size: 14px;
-  line-height: 24px;
-}
-</style>
+<style scoped></style>
