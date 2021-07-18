@@ -8,6 +8,8 @@
 
 ## 开发路线
 
+> 前端界面
+
 参考资源图: [/docs/imgs](docs/imgs)
 
 - 首页
@@ -20,7 +22,13 @@
   - [ ] 主页
   - [ ] 用户观影界面
   - [ ] 用户详情界面
-  
+    
+
+> 后端数据
+
+- [ ] 首页数据
+- [ ] 榜单数据
+- [ ] 用户数据
 
 ## 前端界面
 
@@ -93,6 +101,19 @@ pip3 install flask
 ### 知识点参考
 
 - [Flask使用说明](https://flask.palletsprojects.com/en/1.0.x/quickstart/#a-minimal-application)
+
+## 爬虫
+
+### 环境准备
+
+- BeautifulSoup4
+
+```bash
+# 安装用于解析网页的工具
+pip3 install bs4
+# 处理网络请求
+pip3 install reqeusts
+```
 
 
 ## Q & A
