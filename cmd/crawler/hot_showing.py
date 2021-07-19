@@ -31,5 +31,5 @@ for tag in soup.find_all('li'):
 
 # pprint.pprint(collector)
 
-with open('../src/index.json', 'w') as f:
+with open('../src/hot_showing.json', 'w') as f:
     f.write(collector.__str__().replace('\'','\"'))
