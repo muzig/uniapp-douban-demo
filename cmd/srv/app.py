@@ -2,28 +2,17 @@ from flask import Flask
 
 app = Flask(__name__)
 
-data_girls = open("../src/girls.json").read()
+json_data = {}
 
 
-# 获取女孩信息
-@app.route('/girls')
-def girls():
-    return data_girls
-
-
-data_hot_showing = open("../src/hot_showing.json").read()
-
-
-# 获取热门放映信息
-@app.route('/hot_showing')
-def hot_showing():
-    return data_hot_showing
-
-
-data_hot_movie = open("../src/hot_movie.json").read()
-
-
-# 获取热门放映信息
-@app.route('/hot_movie')
-def hot_movie():
-    return data_hot_movie
+# 读取文件信息
+@app.route('/<file_name>')
+def girls(file_name):
+    try:
+        if json_data.get(file_name) is not None:
+            return json_data[file_name]
+        with open("../src/"+file_name+".json", 'r') as f:
+            json_data[file_name] = f.read()
+            return json_data[file_name]
+    except Exception as err:
+        return f'{err}'
