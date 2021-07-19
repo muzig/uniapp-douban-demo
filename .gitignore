@@ -1,5 +1,11 @@
-// npc
+# npc
 node_modules/
 
-// uni-app
+# uni-app
 unpackage/
+
+# Python
+__pycache__/
+
+# Goland
+.idea/
