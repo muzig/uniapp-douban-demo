@@ -6,6 +6,26 @@
 
 此项目的目的是为了通过实践的方式, 熟悉uni-app的相关组件, 也同时熟悉相关的接口的使用方法等练手项目.
 
+- [概览](#概览)
+- [开发路线](#开发路线)
+- [前端](#前端)
+  - [环境准备](#环境准备)
+  - [知识点参考](#知识点参考)
+    - [HTML/CSS/JS](#htmlcssjs)
+    - [基础](#基础)
+    - [网络](#网络)
+    - [数据](#数据)
+    - [框架](#框架)
+    - [其他](#其他)
+- [后端](#后端)
+  - [环境准备](#环境准备-1)
+  - [知识点参考](#知识点参考-1)
+- [爬虫](#爬虫)
+  - [环境准备](#环境准备-2)
+  - [知识点参考](#知识点参考-2)
+- [Q & A](#q--a)
+- [参考来源](#参考来源)
+
 ## 开发路线
 
 > 前端界面
@@ -30,7 +50,7 @@
 - [ ] 榜单数据
 - [ ] 用户数据
 
-## 前端界面
+## 前端
 
 ### 环境准备
 
@@ -87,11 +107,13 @@ npm i @dcloudio/types --save-dev
 - [第三方服务](https://uniapp.dcloud.io/api/plugins/provider)
 - [其他](https://uniapp.dcloud.io/api/other/authorize)
 
-## 后端界面
+## 后端
+
+Flask: 基于python的用于快速开发的web框架
+
+1. 数据服务目录: [cmd/srv](cmd/srv)
 
 ### 环境准备
-
-- Flask: 基于python的用于快速开发的web框架
 
 ```bash
 # 安装python web框架
@@ -100,13 +122,18 @@ pip3 install flask
 
 ### 知识点参考
 
-- [Flask使用说明](https://flask.palletsprojects.com/en/1.0.x/quickstart/#a-minimal-application)
+- [Flask 文档说明](https://flask.palletsprojects.com/en/1.0.x/quickstart/#a-minimal-application)
 
 ## 爬虫
 
-### 环境准备
 
-- BeautifulSoup4
+1. 数据爬取目录: [cmd/crawler](cmd/crawler)
+2. 数据清洗目录: [cmd/src](cmd/src)
+3. 数据服务目录: [cmd/srv](cmd/srv)
+
+提取的数据, 按照分类来生成文件,同时按照文件来实现接口, 统一方便
+
+### 环境准备
 
 ```bash
 # 安装用于解析网页的工具
@@ -115,6 +142,9 @@ pip3 install bs4
 pip3 install reqeusts
 ```
 
+### 知识点参考
+
+- [BeautifulSoup4 教学文档](https://beautifulsoup.readthedocs.io/zh_CN/v4.4.0/)
 
 ## Q & A
 
