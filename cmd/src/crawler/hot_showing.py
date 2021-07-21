@@ -3,8 +3,9 @@
 
 from bs4 import BeautifulSoup
 import pprint
+import util
 
-soup = BeautifulSoup(open('../src/index.html', 'r'), 'lxml')
+soup = BeautifulSoup(open('index.html', 'r'), 'lxml')
 
 collector = []
 for tag in soup.find_all('li'):
@@ -31,5 +32,5 @@ for tag in soup.find_all('li'):
 
 # pprint.pprint(collector)
 
-with open('../src/hot_showing.json', 'w') as f:
+with open(util.get_static_path()+'/hot_showing.json', 'w') as f:
     f.write(collector.__str__().replace('\'','\"'))

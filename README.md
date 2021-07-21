@@ -111,7 +111,7 @@ npm i @dcloudio/types --save-dev
 
 Flask: 基于python的用于快速开发的web框架
 
-1. 数据服务目录: [cmd/srv](cmd/srv)
+1. 数据服务目录: [cmd/src/srv](cmd/src/srv)
 
 ### 环境准备
 
@@ -127,9 +127,9 @@ pip3 install flask
 ## 爬虫
 
 
-1. 数据爬取目录: [cmd/crawler](cmd/crawler)
-2. 数据清洗目录: [cmd/src](cmd/src)
-3. 数据服务目录: [cmd/srv](cmd/srv)
+1. 数据爬取目录: [cmd/src/crawler](cmd/src/crawler)
+2. 数据清洗目录: [cmd/src/srv/staic](cmd/src/srv/static)
+3. 数据服务目录: [cmd/src/srv](cmd/src/srv)
 
 提取的数据, 按照分类来生成文件,同时按照文件来实现接口, 统一方便
 

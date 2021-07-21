@@ -3,8 +3,9 @@
 
 from bs4 import BeautifulSoup
 import pprint
+import util
 
-soup = BeautifulSoup(open('../src/index.html', 'r'), 'lxml')
+soup = BeautifulSoup(open('index.html', 'r'), 'lxml')
 
 collector = []
 for tag in soup.find_all('a'):
@@ -18,13 +19,12 @@ for tag in soup.find_all('a'):
     if img is None:
         continue
     span = tag.find('span')
-    if span is None or 'episodes-info' not in span.get('class'):
+    if span is None or 'episodes-info' in span.get('class'):
         continue
     # 获取基本信息
     data = {
         "title": img.get('alt'),
         "img": img.get('src'),
-        "blues": span.string
     }
     # 获取分数
     strong = tag.find('strong')
@@ -36,5 +36,5 @@ for tag in soup.find_all('a'):
 
 # pprint.pprint(collector)
 
-with open('../src/hot_teleplay.json', 'w') as f:
+with open(util.get_static_path()+'/hot_movie.json', 'w') as f:
     f.write(collector.__str__().replace('\'','\"'))
