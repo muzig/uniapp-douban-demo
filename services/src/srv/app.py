@@ -16,3 +16,7 @@ def hot_static(file_name):
 @app.route('/hot/')
 def hot():
     return jsonify([e for e in os.listdir("static") if e.endswith('.json')])
+
+@app.route('/girls/<file_name>')
+def girls_static(file_name):
+    return redirect(url_for('static', filename=f'{file_name}'))
