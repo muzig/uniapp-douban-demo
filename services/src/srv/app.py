@@ -3,6 +3,10 @@ import json, os
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return redirect(url_for('hot'))
+
 
 @app.route('/hot/<file_name>')
 def hot_static(file_name):

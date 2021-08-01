@@ -16,6 +16,8 @@ export default {
       return this.$store.state.count;
     },
   },
+  created() {},
+  onLoad() {},
   methods: {
     handleIncrement() {
       this.$store.commit("increment");
